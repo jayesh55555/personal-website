@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="images\logo 1.jpg">
+    <title> Jayesh Gulani</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images\logo.jpg" class="logo" width="30">
+                <ul id="menus">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- Header Text Section -->
+            <div class="header-content">
+                <div class="header-text">
+                    <p><span class="hello-text">Hello!</span></p>
+                    <h1>I'm Jayesh Gulani</h1>
+                    <h2>Software Developer and Data Science Engineer</h2>
+                </div>
+                
+                <div class="header-image">
+                    <img src="images/head_image.png" alt="Descriptive Alt Text">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abt-col-1">
+                    <img src="images/jayesh.jpg">
+                </div>
+                <div class="abt-col-2">
+                    <h1 class="sub-header">Who I am</h1>
+                    <p>An emerging Software Engineer committed to developing transformative solutions,
+                        Currently pursuing Bachelor of Technology in Information Technology from Medi-caps University, indore, india.
+                        My goal is to leverage this unique blend of skills to drive innovation and create significant technological impacts.
+                     </p>
+
+                    <div class="tabs">
+                        <p class="tab-links act-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-conts act-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br/>HTML, CSS, Javascript</li>
+                            <li><span>Back-End</span><br/>Java, C, C++, Python, Django, R</li>
+                            <li><span>Database</span><br/>MongoDB, MySQL</li>
+                            <li><span>Tools</span><br/>PyCharm, Jupyter, GitHub</li>
+                            <li><span>Operating Systems</span><br>Windows, Linux, Mac</li>
+                            <li><span>Languages</span><br/>English, Hindi</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-conts" id="education">
+                        <ul>
+                            <li><span>Aug 2021 - Present</span><br/>B.Tech in Information Technology | Medi-caps University</li>
+                            <li><span>June 2008 - Apr 2020</span><br/>High School Diploma | Choithram School North Campus, Indore</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="resume">
+                    <a href="images\Jayesh Gulani resume.pdf" download class="btn btncv">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-header">Services</h1>
+
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I am experienced developing web applications using HTML, CSS, Javascript</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen"></i>
+                    <h2>Back-End Design</h2>
+                    <p>I specialize in developing scalable APIs and server-side logic to power dynamic and efficient web applications.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Mobile Development</h2>
+                    <p>I'm advancing my skills in Kotlin to develop engaging Android apps with innovative design and seamless functionality. </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-header">Projects</h1>
+        
+            <div class="work-list">
+                
+                    <div class="work">
+                        <img src="images\barcode 1.png">
+                        <div class="layer">
+                        <h3>Product Barcode Generator</h3>
+                        <p>A Django and Python-powered website for registering, searching and generating barcode of any product.</p>
+                        <a href="https://github.com/jayesh55555/Product-Barcode-Generator" target="_blank" rel="noreferrer noopener"> <i class="fa-solid fa-link"></i></a> 
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images\jayesh web.png">
+                        <div class="layer">
+                            <h3>Business Website</h3>
+                            <p>The website that showcases all the software I built so far.</p>
+                            <a href="https://www.kapilgulani.site/" target="_blank" rel="noreferrer noopener"> <i class="fa-solid fa-link"></i></a> 
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images\web scraping.png">
+                        <div class="layer">
+                            <h3>WEB SCRAPING</h3>
+                            <p>Web Scraping Product Information using Python</p>
+                            <a href="https://github.com/jayesh55555/PRODIGY-Internship-Projects/tree/main/PRODIGY%20Internship%20projects/PRODIGY_SD_05" target="_blank" rel="noreferrer noopener"> <i class="fa-solid fa-link"></i></a> 
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/movies.png" alt="Movie Recommendation System">
+                        <div class="layer">
+                            <h3>Movie Recommendation </h3>
+                            <p>Intelligent movie recommendation system using machine learning algorithms to enhance user experiences.</p>
+                            <a href="https://github.com/jayesh55555/Movie-Recommendation" target="_blank" rel="noreferrer noopener"> <i class="fa-solid fa-link"></i></a> 
+                        </div>
+                    </div>
+                
+                
+            </div>
+
+            </div>
+            <div class="projects-summary">
+                <a href="https://github.com/jayesh55555?tab=repositories" target="_blank" rel="noreferrer noopener" class="btn">See more</a>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="contact-section">
+        <div class="contact-header">
+            <h1 class="sub-header common-header">Contact Me</h1>
+            <p>Just a call, mail, text away!</p>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <h3>ADDRESS</h3>
+            <p>Indore, Madhya Pradesh</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <h3>CONTACT NUMBER</h3>
+            <p>+919826869555</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <h3>EMAIL ADDRESS</h3>
+            <p>gullanijayesh55@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <h3>WEBSITE</h3>
+            <p><a href="https://www.kapilgulani.site/" target="_blank">www.kapilgulani.site</a></p>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-l">
+                    <h1 class="sub-header common-header">Let's Connect</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> gullanijayesh55@gmail.com</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/jayesh_gulani/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jayesh-gulani-ba8899250/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jayesh55555" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="contact-r">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" id=""  rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btncv">Submit</button>
+                    </form>
+                    <span id="submit-msg"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2024 All rights reserved | This Website is made by JAYESH </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
