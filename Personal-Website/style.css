@@ -297,15 +297,6 @@ nav .fa-solid {
     margin-top: 50px;
 }
 
-/* Center the last two images */
-.work:nth-child(4) {
-    grid-column: 1 / 2; /* Place the fourth image in the first column */
-}
-
-.work:nth-child(5) {
-    grid-column: 2 / 4; /* Span the fifth image across the last two columns */
-}
-
 .work {
     border-radius: 10px;
     position: relative;
