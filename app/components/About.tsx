@@ -33,12 +33,12 @@ export default function About() {
             className="relative group"
           >
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 p-1">
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-900">
+              <div className="relative rounded-2xl overflow-hidden bg-gray-900">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <img
                     src="/images/jayesh.jpg"
                     alt="Jayesh Gulani"
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-auto object-contain transform group-hover:scale-105 transition-transform duration-700"
                   />
               </div>
             </div>
@@ -63,8 +63,8 @@ export default function About() {
               viewport={{ once: true }}
               className="text-gray-400 text-lg leading-relaxed"
             >
-              An emerging Software Engineer committed to developing transformative solutions. 
-              Currently pursuing Bachelor of Technology in Information Technology from Medi-caps University, Indore, India. 
+              A Software Engineer with 1+ year of experience committed to developing transformative solutions. 
+              Graduated with a Bachelor of Technology in Information Technology from Medi-caps University, Indore, India. 
               My goal is to leverage this unique blend of skills to drive innovation and create significant technological impacts.
             </motion.p>
 
