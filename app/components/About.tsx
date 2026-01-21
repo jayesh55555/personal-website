@@ -35,11 +35,11 @@ export default function About() {
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 p-1">
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-900">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <img
-                  src="/images/jayesh.jpg"
-                  alt="Jayesh Gulani"
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                />
+                  <img
+                    src="/images/jayesh.jpg"
+                    alt="Jayesh Gulani"
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  />
               </div>
             </div>
           </motion.div>

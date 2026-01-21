@@ -51,7 +51,7 @@ export default function Hero() {
               transformStyle: 'preserve-3d'
             }}
           >
-            I'm Jayesh Gulani
+            I&apos;m Jayesh Gulani
           </motion.h1>
           
           <motion.h2
