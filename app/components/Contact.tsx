@@ -67,7 +67,7 @@ export default function Contact() {
             { icon: '📍', title: 'Location', value: 'Indore, Madhya Pradesh' },
             { icon: '📱', title: 'Phone', value: '+91 9826869555' },
             { icon: '✉️', title: 'Email', value: 'gulanijayesh55@gmail.com' },
-            { icon: '🌐', title: 'Website', value: 'jayeshgulani.site' },
+            { icon: '🌐', title: 'Website', value: 'jayeshgulani.tech' },
           ].map((item, index) => (
             <motion.div
               key={item.title}
