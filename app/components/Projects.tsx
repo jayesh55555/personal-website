@@ -5,6 +5,13 @@ import { useRef, useState } from 'react';
 
 const projects = [
   {
+    title: 'Food Label Scanner',
+    description: 'AI-powered mobile app that scans food labels to provide instant nutritional information and health insights.',
+    image: '/images/food item scanner.png',
+    link: 'https://github.com/jayesh55555/Food-Label-Scanner',
+    tech: ['AI/ML', 'Computer Vision', 'Mobile', 'OCR']
+  },
+  {
     title: 'Knowledge Graph',
     description: 'An AI-powered knowledge graph builder that transforms unstructured text into structured entity-relationships',
     image: '/images/knowledge_graph_img.jpg',
