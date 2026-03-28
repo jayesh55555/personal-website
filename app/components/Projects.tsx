@@ -5,6 +5,13 @@ import { useRef, useState } from 'react';
 
 const projects = [
   {
+    title: 'SkillSprint AI',
+    description: 'AI-powered learning platform that personalizes skill development paths and accelerates professional growth.',
+    image: '/images/skill sprint AI.png',
+    link: 'https://github.com/jayesh55555/SkillSprint-AI',
+    tech: ['AI/ML', 'Python', 'NLP', 'Personalization']
+  },
+  {
     title: 'Food Label Scanner',
     description: 'AI-powered mobile app that scans food labels to provide instant nutritional information and health insights.',
     image: '/images/food item scanner.png',
@@ -45,13 +52,6 @@ const projects = [
     image: '/images/door window.png',
     link: 'https://github.com/jayesh55555/window-door_detection',
     tech: ['YOLOv5', 'Computer Vision', 'PyTorch']
-  },
-  {
-    title: 'Food Item Recognizer',
-    description: 'Uses deep learning to identify food items from images and estimate their calorie content, aiding users in dietary tracking.',
-    image: '/images/food items.png',
-    link: 'https://github.com/jayesh55555/Food-Item-Recognizer',
-    tech: ['TensorFlow', 'CNN', 'Image Recognition']
   },
   {
     title: 'Amber Designer',

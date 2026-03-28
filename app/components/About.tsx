@@ -86,7 +86,7 @@ export default function About() {
             </motion.div>
 
             <motion.a
-              href="/images/Jayesh_resume_new.pdf"
+              href="/images/jayesh_gulani_CV.pdf"
               download
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
