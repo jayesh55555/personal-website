@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Jayesh Gulani | AI Engineer & Software Developer",
   description: "Portfolio of Jayesh Gulani - AI Engineer, Software Developer, and Data Science Engineer specializing in modern web technologies and machine learning.",
   keywords: ["Jayesh Gulani", "AI Engineer", "Software Developer", "Portfolio", "Web Development", "Machine Learning"],
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

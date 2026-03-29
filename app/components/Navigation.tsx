@@ -1,11 +1,12 @@
 'use client';
 
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 const navItems = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
+  { name: 'Journey', href: '#journey' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
@@ -15,8 +16,6 @@ const navItems = [
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
-  const { scrollYProgress } = useScroll();
-  const scaleX = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,12 +40,6 @@ export default function Navigation() {
 
   return (
     <>
-      {/* Progress Bar */}
-      <motion.div
-        style={{ scaleX }}
-        className="fixed top-0 left-0 right-0 h-1 bg-primary origin-left z-50"
-      />
-
       {/* Navigation */}
       <motion.nav
         initial={{ y: -100 }}
