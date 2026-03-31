@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { ProjectItem } from './types';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface ProjectModalProps {
   project: ProjectItem;
@@ -12,6 +12,13 @@ interface ProjectModalProps {
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const [imgError, setImgError] = useState(false);
   const hasImage = project.image && !imgError;
+
+  // Lock body scroll while modal is open
+  useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = prev; };
+  }, []);
 
   return (
     <AnimatePresence>
@@ -29,6 +36,8 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           transition={{ type: 'spring', damping: 28, stiffness: 280 }}
           className="relative max-w-2xl w-full bg-gray-950 rounded-2xl border border-gray-800 overflow-hidden shadow-2xl"
           onClick={e => e.stopPropagation()}
+          onWheel={e => e.stopPropagation()}
+          onTouchMove={e => e.stopPropagation()}
           style={{ maxHeight: '92vh', overflowY: 'auto' }}
         >
           {/* Top glow line */}
