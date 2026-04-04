@@ -136,15 +136,15 @@ export default function GameCanvas({ onAllCollected, onSkip }: GameCanvasProps) 
     }
   }, []);
 
-  // Initialize projects - spawn off right edge, staggered
+  // Initialize projects - spawn closer and faster
   const initProjects = useCallback((width: number, height: number) => {
     projectsRef.current = gameProjects.map((p, i) => ({
       ...p,
-      position: { x: width + 200 + i * 600, y: height * 0.2 + Math.random() * height * 0.6 },
-      velocity: { vx: -(0.6 + Math.random() * 0.4), vy: 0 },
+      position: { x: width + 100 + i * 200, y: height * 0.2 + Math.random() * height * 0.6 },
+      velocity: { vx: -(1.8 + Math.random() * 0.8), vy: 0 },
       radius: 50,
       collected: false,
-      spawnX: width + 200 + i * 600,
+      spawnX: width + 100 + i * 200,
       spawnY: height * 0.2 + Math.random() * height * 0.6,
       bobOffset: Math.random() * Math.PI * 2,
       bobSpeed: 0.8 + Math.random() * 0.5,
@@ -507,9 +507,9 @@ export default function GameCanvas({ onAllCollected, onSkip }: GameCanvasProps) 
           // Move left slowly
           project.position.x += project.velocity.vx;
 
-          // If off left edge, wrap to right
+          // If off left edge, wrap to right with closer spacing
           if (project.position.x < -100) {
-            project.position.x = W + 150 + Math.random() * 300;
+            project.position.x = W + 100 + Math.random() * 150;
             project.position.y = H * 0.15 + Math.random() * H * 0.65;
           }
 

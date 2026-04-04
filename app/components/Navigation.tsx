@@ -54,6 +54,10 @@ export default function Navigation() {
             {/* Logo */}
             <motion.a
               href="#home"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold text-gradient"
             >
@@ -66,6 +70,16 @@ export default function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.getElementById(item.href.slice(1));
+                    if (element) {
+                      element.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      });
+                    }
+                  }}
                   className={`relative text-sm font-medium transition-colors ${
                     activeSection === item.href.slice(1)
                       ? 'text-primary'

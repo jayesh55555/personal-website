@@ -98,7 +98,6 @@ export default function Contact() {
               {[
                 { name: 'GitHub', url: 'https://github.com/jayesh55555', icon: '💻' },
                 { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jayesh-gulani-ba8899250/', icon: '💼' },
-                { name: 'Instagram', url: 'https://www.instagram.com/jayesh_gulani/', icon: '📸' },
               ].map((social, index) => (
                 <motion.a
                   key={social.name}

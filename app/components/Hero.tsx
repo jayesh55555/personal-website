@@ -169,15 +169,25 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <MagneticButton
-              as="a"
-              href="#projects"
+              as="button"
+              onClick={() => {
+                const element = document.getElementById('projects');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
               className="px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all hover:shadow-lg hover:shadow-primary/50 block"
             >
               View Projects ✈️
             </MagneticButton>
             <MagneticButton
-              as="a"
-              href="#contact"
+              as="button"
+              onClick={() => {
+                const element = document.getElementById('contact');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
               className="px-8 py-4 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-all block"
             >
               Get in Touch

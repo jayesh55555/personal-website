@@ -79,13 +79,18 @@ export default function CallToAction() {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a
-            href="#contact"
+          <button
+            onClick={() => {
+              const element = document.getElementById('contact');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }}
             className="group relative px-10 py-4 bg-primary text-white rounded-xl font-semibold text-lg overflow-hidden hover:scale-105 transition-transform hover:shadow-[0_0_40px_rgba(239,83,39,0.4)]"
           >
             <span className="relative z-10">Contact Me ✉️</span>
             <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity" />
-          </a>
+          </button>
 
           <a
             href="/images/jayesh_gulani_CV.pdf"
