@@ -68,7 +68,3 @@ Edit the content in the component files:
 - `app/components/Projects.tsx` - Projects section
 - `app/components/Experience.tsx` - Experience timeline
 - `app/components/Contact.tsx` - Contact form
-
-## License
-
-© 2024 Jayesh Gulani. All rights reserved.
